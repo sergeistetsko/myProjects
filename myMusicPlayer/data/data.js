@@ -6,9 +6,10 @@ export const playlists = [
             coverImageUrl: './assets/images/mainCoverImage1.png',
             totalInfo: {
                 totalTracksCount: 4,
-                totalTracksDurationInSeconds: 733
+                totalTracksDurationInSeconds: 0
             }
         },
+        label: './assets/icons/is-trend.png',
         tracks: [
             {
                 trackId: '1',
@@ -55,7 +56,7 @@ export const playlists = [
             coverImageUrl: './assets/images/mainCoverImage2.png',
             totalInfo: {
                 totalTracksCount: 4,
-                totalTracksDurationInSeconds: 733
+                totalTracksDurationInSeconds: 0
             }
         },
         tracks: [
