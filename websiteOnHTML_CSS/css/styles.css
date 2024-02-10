@@ -107,7 +107,7 @@ h2.title {
     background-color: #efefef;
     padding: 85px 0 75px 0;
 }
-.waiting .waiting-header {
+.waiting .waiting-header, .finish .finish-header {
     color: #252525;
     font-family: Roboto, sans-serif;
     font-size: 30px;
@@ -115,8 +115,10 @@ h2.title {
     text-transform: uppercase;
     text-align: center;
 }
-
-.waiting .waiting-divider {
+.finish .finish-header {
+    color: #ffffff;
+}
+.waiting .waiting-divider, .finish .finish-divider {
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
@@ -181,4 +183,38 @@ h2.title {
     top: -54px;
     left: -240px;
     z-index: -1;
+}
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/fourth-section/background/fourth-bg.svg') center center / cover no-repeat;
+}
+.finish .finish-wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+.finish .finish-wrapper .finish-item {
+    width: 204px;
+
+}
+.finish .finish-wrapper .finish-item .finish-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 50%;
+}
+
+.finish .finish-wrapper .finish-item .finish-description {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
 }
