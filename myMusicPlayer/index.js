@@ -8,7 +8,7 @@ const playlistData = [
         tracksInformation: [
             {
                 trackCoverUrl: 'trackCoverImage1Playlist1.png',
-                isTopTrack: false,
+                isTopTrack: true,
                 artistName: 'Eminem',
                 trackName: 'Rap God',
                 musicFileUrl: './assets/audio/eminem-rap-god.mp3',
@@ -22,7 +22,7 @@ const playlistData = [
             },
             {
                 trackCoverUrl: 'trackCoverImage1Playlist3.png',
-                isTopTrack: false,
+                isTopTrack: true,
                 artistName: 'DMX',
                 trackName: 'X Gon\' Give It To Ya',
                 musicFileUrl: './assets/audio/dmx-x-gon-give-it-to-ya.mp3',
@@ -45,14 +45,14 @@ const playlistData = [
         tracksInformation: [
             {
                 trackCoverUrl: 'trackCoverImage1Playlist2.png',
-                isTopTrack: false,
+                isTopTrack: true,
                 artistName: 'Public Enemy',
                 trackName: 'Fight the Power',
                 musicFileUrl: './assets/audio/public-enemy-fight-the-power.mp3',
             },
             {
                 trackCoverUrl: 'trackCoverImage2Playlist2.png',
-                isTopTrack: false,
+                isTopTrack: true,
                 artistName: 'Vanila Ice',
                 trackName: 'Ice Ice Baby',
                 musicFileUrl: './assets/audio/vanilla-ice-ice-ice-baby.mp3',
