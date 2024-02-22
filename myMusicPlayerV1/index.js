@@ -466,3 +466,338 @@ playlistAudioTrack4Element.controls = true
 playlistAudioTrack4Element.src = playlistsData[0].tracksInformation[3].musicFileUrl
 
 trackAudioBlock4Element.append(playlistAudioTrack4Element)
+    
+//==========================================================================================================
+
+// create playlistWrapper
+
+const playlistWrapper2Element = document.createElement('div')
+
+playlistWrapper2Element.classList.add('playlist-block')
+
+playlistsWrapperElement.append(playlistWrapper2Element)
+
+// create playlistCoverInfoBlockWrapper
+
+const playlistCoverInfoBlockWrapper2Element = document.createElement('div')
+
+playlistCoverInfoBlockWrapper2Element.classList.add('playlist-cover-info-block')
+
+playlistWrapper2Element.append(playlistCoverInfoBlockWrapper2Element)
+
+// create playlistMainCover
+
+const playlistCoverWrapper2Element = document.createElement('div')
+
+playlistCoverWrapper2Element.classList.add('playlist-cover-wrapper')
+
+playlistCoverInfoBlockWrapper2Element.append(playlistCoverWrapper2Element)
+
+const playlistMainCover2Element = document.createElement('img')
+
+playlistMainCover2Element.classList.add('playlist-main-cover')
+playlistMainCover2Element.src = playlistsData[1].coverPlaylistUrl
+playlistMainCover2Element.alt = 'main-cover'
+
+playlistCoverWrapper2Element.append(playlistMainCover2Element)
+
+// create playlistInfoBlock
+
+const playlistInfoWrapper2Element = document.createElement('div')
+
+playlistInfoWrapper2Element.classList.add('playlist-info-block')
+
+const playlistTitle2Element = document.createElement('span')
+
+playlistTitle2Element.classList.add('playlist-title')
+playlistTitle2Element.append('Playlist')
+
+const playlistMainTitle2Element = document.createElement('h2')
+
+playlistMainTitle2Element.classList.add('playlist-main-title')
+playlistMainTitle2Element.append(playlistsData[1].title)
+
+const playlistTracksCountAndTotalDuration2Element = document.createElement('span')
+
+playlistTracksCountAndTotalDuration2Element.classList.add('playlist-track-number-and-duration')
+playlistTracksCountAndTotalDuration2Element.append(playlistsData[1].numberOfTracks + ' track(-s), ' + playlistsData[1].totalTracksDurationInSeconds)
+
+const playlistTopArtists2Element = document.createElement('span')
+
+playlistTopArtists2Element.classList.add('playlist-top-artists')
+
+playlistTopArtists2Element.append(playlistsData[1].tracksInformation[0].artistName + ', ' + playlistsData[1].tracksInformation[1].artistName + ', ' + playlistsData[1].tracksInformation[2].artistName)
+
+const playlistOthersArtists2Element = document.createElement('span')
+
+playlistOthersArtists2Element.classList.add('playlist-others-artists')
+
+playlistOthersArtists2Element.append(' and others')
+
+playlistCoverInfoBlockWrapper2Element.append(playlistInfoWrapper2Element)
+playlistInfoWrapper2Element.append(playlistTitle2Element, playlistMainTitle2Element, playlistTracksCountAndTotalDuration2Element, playlistTopArtists2Element, playlistOthersArtists2Element)
+
+// create playlistTracksBlock5 --------------------------------------------------------------------------
+
+const playlistTracksWrapper5Element = document.createElement('div')
+
+playlistTracksWrapper5Element.classList.add('playlist-track-block')
+
+playlistWrapper2Element.append(playlistTracksWrapper5Element)
+
+// create playlistTrack5
+
+// create playlistTrackCover5
+
+const playlistTrackCover5Element = document.createElement('img')
+
+playlistTrackCover5Element.classList.add('playlist-track-cover-image')
+playlistTrackCover5Element.src = playlistsData[1].tracksInformation[0].trackCoverUrl
+playlistTrackCover5Element.alt = 'cover-image'
+
+playlistTracksWrapper5Element.append(playlistTrackCover5Element)
+
+// create trackAudioBlock5
+
+const trackAudioBlock5Element = document.createElement('div')
+
+trackAudioBlock5Element.classList.add('track-audio-block')
+
+playlistTracksWrapper5Element.append(trackAudioBlock5Element)
+
+// create playlistTrackName5
+
+const playlistTrackArtistName5Element = document.createElement('span')
+
+playlistTrackArtistName5Element.classList.add('playlist-track-artist-name')
+
+playlistTrackArtistName5Element.append(playlistsData[1].tracksInformation[0].artistName + ' - ')
+
+const playlistTrackName5Element = document.createElement('span')
+
+playlistTrackName5Element.classList.add('playlist-track-name')
+
+playlistTrackArtistName5Element.append(playlistsData[1].tracksInformation[0].trackName)
+
+trackAudioBlock5Element.append(playlistTrackArtistName5Element, playlistTrackName5Element)
+
+// create isTopTrack
+
+if (playlistsData[1].tracksInformation[0].isTopTrack) {
+    const topTrackElement = document.createElement('img')
+
+    topTrackElement.classList.add('playlist-top-track-image')
+
+    topTrackElement.src = playlistsData[1].topTrackUrl
+    topTrackElement.alt = 'top-track-image'
+
+    playlistTrackArtistName5Element.parentNode.insertBefore(topTrackElement, playlistTrackArtistName5Element)
+}
+// create playlistAudioTrack5
+
+const playlistAudioTrack5Element = document.createElement('audio')
+
+playlistAudioTrack5Element.classList.add('playlist-track-audio')
+playlistAudioTrack5Element.controls = true
+playlistAudioTrack5Element.src = playlistsData[1].tracksInformation[0].musicFileUrl
+
+trackAudioBlock5Element.append(playlistAudioTrack5Element)
+
+// create playlistTracksBlock6 --------------------------------------------------------------------------
+
+const playlistTracksWrapper6Element = document.createElement('div')
+
+playlistTracksWrapper6Element.classList.add('playlist-track-block')
+
+playlistWrapper2Element.append(playlistTracksWrapper6Element)
+
+// create playlistTrack6
+
+// create playlistTrackCover6
+
+const playlistTrackCover6Element = document.createElement('img')
+
+playlistTrackCover6Element.classList.add('playlist-track-cover-image')
+playlistTrackCover6Element.src = playlistsData[1].tracksInformation[1].trackCoverUrl
+playlistTrackCover6Element.alt = 'cover-image'
+
+playlistTracksWrapper6Element.append(playlistTrackCover6Element)
+
+// create trackAudioBlock6
+
+const trackAudioBlock6Element = document.createElement('div')
+
+trackAudioBlock6Element.classList.add('track-audio-block')
+
+playlistTracksWrapper6Element.append(trackAudioBlock6Element)
+
+// create playlistTrackName6
+
+const playlistTrackArtistName6Element = document.createElement('span')
+
+playlistTrackArtistName6Element.classList.add('playlist-track-artist-name')
+
+playlistTrackArtistName6Element.append(playlistsData[1].tracksInformation[1].artistName + ' - ')
+
+const playlistTrackName6Element = document.createElement('span')
+
+playlistTrackName6Element.classList.add('playlist-track-name')
+
+playlistTrackArtistName6Element.append(playlistsData[1].tracksInformation[1].trackName)
+
+trackAudioBlock6Element.append(playlistTrackArtistName6Element, playlistTrackName6Element)
+
+// create isTopTrack
+
+if (playlistsData[1].tracksInformation[1].isTopTrack) {
+    const topTrackElement = document.createElement('img')
+
+    topTrackElement.classList.add('playlist-top-track-image')
+
+    topTrackElement.src = playlistsData[1].topTrackUrl
+    topTrackElement.alt = 'top-track-image'
+
+    playlistTrackArtistName6Element.parentNode.insertBefore(topTrackElement, playlistTrackArtistName6Element)
+}
+// create playlistAudioTrack6
+
+const playlistAudioTrack6Element = document.createElement('audio')
+
+playlistAudioTrack6Element.classList.add('playlist-track-audio')
+playlistAudioTrack6Element.controls = true
+playlistAudioTrack6Element.src = playlistsData[1].tracksInformation[1].musicFileUrl
+
+trackAudioBlock6Element.append(playlistAudioTrack6Element)
+
+ // create playlistTracksBlock7 --------------------------------------------------------------------------
+
+ const playlistTracksWrapper7Element = document.createElement('div')
+
+ playlistTracksWrapper7Element.classList.add('playlist-track-block')
+
+ playlistWrapper2Element.append(playlistTracksWrapper7Element)
+
+ // create playlistTrack7
+
+ // create playlistTrackCover7
+
+ const playlistTrackCover7Element = document.createElement('img')
+
+ playlistTrackCover7Element.classList.add('playlist-track-cover-image')
+ playlistTrackCover7Element.src = playlistsData[1].tracksInformation[2].trackCoverUrl
+ playlistTrackCover7Element.alt = 'cover-image'
+
+ playlistTracksWrapper7Element.append(playlistTrackCover7Element)
+
+ // create trackAudioBlock7
+
+ const trackAudioBlock7Element = document.createElement('div')
+
+ trackAudioBlock7Element.classList.add('track-audio-block')
+
+ playlistTracksWrapper7Element.append(trackAudioBlock7Element)
+
+ // create playlistTrackName7
+
+ const playlistTrackArtistName7Element = document.createElement('span')
+
+ playlistTrackArtistName7Element.classList.add('playlist-track-artist-name')
+
+ playlistTrackArtistName7Element.append(playlistsData[1].tracksInformation[2].artistName + ' - ')
+
+ const playlistTrackName7Element = document.createElement('span')
+
+ playlistTrackName7Element.classList.add('playlist-track-name')
+
+ playlistTrackArtistName7Element.append(playlistsData[1].tracksInformation[2].trackName)
+
+ trackAudioBlock7Element.append(playlistTrackArtistName7Element, playlistTrackName7Element)
+
+ // create isTopTrack
+
+ if (playlistsData[1].tracksInformation[2].isTopTrack) {
+    const topTrackElement = document.createElement('img')
+
+    topTrackElement.classList.add('playlist-top-track-image')
+
+    topTrackElement.src = playlistsData[1].topTrackUrl
+    topTrackElement.alt = 'top-track-image'
+
+    playlistTrackArtistName7Element.parentNode.insertBefore(topTrackElement, playlistTrackArtistName7Element)
+}
+ // create playlistAudioTrack7
+
+ const playlistAudioTrack7Element = document.createElement('audio')
+
+ playlistAudioTrack7Element.classList.add('playlist-track-audio')
+ playlistAudioTrack7Element.controls = true
+ playlistAudioTrack7Element.src = playlistsData[1].tracksInformation[2].musicFileUrl
+
+ trackAudioBlock7Element.append(playlistAudioTrack7Element)
+
+// create playlistTracksBlock8 --------------------------------------------------------------------------
+
+const playlistTracksWrapper8Element = document.createElement('div')
+
+playlistTracksWrapper8Element.classList.add('playlist-track-block')
+
+playlistWrapper2Element.append(playlistTracksWrapper8Element)
+
+// create playlistTrack8
+
+// create playlistTrackCover8
+
+const playlistTrackCover8Element = document.createElement('img')
+
+playlistTrackCover8Element.classList.add('playlist-track-cover-image')
+playlistTrackCover8Element.src = playlistsData[1].tracksInformation[3].trackCoverUrl
+playlistTrackCover8Element.alt = 'cover-image'
+
+playlistTracksWrapper8Element.append(playlistTrackCover8Element)
+
+// create trackAudioBlock8
+
+const trackAudioBlock8Element = document.createElement('div')
+
+trackAudioBlock8Element.classList.add('track-audio-block')
+
+playlistTracksWrapper8Element.append(trackAudioBlock8Element)
+
+// create playlistTrackName8
+
+const playlistTrackArtistName8Element = document.createElement('span')
+
+playlistTrackArtistName8Element.classList.add('playlist-track-artist-name')
+
+playlistTrackArtistName8Element.append(playlistsData[1].tracksInformation[3].artistName + ' - ')
+
+const playlistTrackName8Element = document.createElement('span')
+
+playlistTrackName8Element.classList.add('playlist-track-name')
+
+playlistTrackArtistName8Element.append(playlistsData[1].tracksInformation[3].trackName)
+
+trackAudioBlock8Element.append(playlistTrackArtistName8Element, playlistTrackName8Element)
+
+// create isTopTrack
+
+if (playlistsData[1].tracksInformation[3].isTopTrack) {
+    const topTrackElement = document.createElement('img')
+
+    topTrackElement.classList.add('playlist-top-track-image')
+
+    topTrackElement.src = playlistsData[1].topTrackUrl
+    topTrackElement.alt = 'top-track-image'
+
+    playlistTrackArtistName8Element.parentNode.insertBefore(topTrackElement, playlistTrackArtistName8Element)
+}
+// create playlistAudioTrack8
+
+const playlistAudioTrack8Element = document.createElement('audio')
+
+playlistAudioTrack8Element.classList.add('playlist-track-audio')
+playlistAudioTrack8Element.controls = true
+playlistAudioTrack8Element.src = playlistsData[1].tracksInformation[3].musicFileUrl
+
+trackAudioBlock8Element.append(playlistAudioTrack8Element)
+
